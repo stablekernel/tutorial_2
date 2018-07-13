@@ -1,0 +1,14 @@
+<search-component></search-component>
+<div *ngIf="viewModel.hasWeather">
+    <h3>{{viewModel.location}}</h3>
+    <div>
+        <img style="float: left;" [src]="viewModel.iconUrl">
+        Currently {{viewModel.temperature}}
+    </div>
+    <div>
+        {{viewModel.description}}
+    </div>
+</div>
+<div class="error" *ngIf="viewModel.hasError">
+    {{viewModel.error}}
+</div>

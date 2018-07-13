@@ -1,0 +1,6 @@
+<form (ngSubmit)="onSubmit()" #searchForm="ngForm">
+    <div>
+        <input type="search" placeholder="Zip code" size="5" pattern="[0-9]{5}" required title="5 Digit Zip Code" [(ngModel)]="zipCode"/>
+        <input type="submit"/>
+    </div>
+</form>
